@@ -1,0 +1,20 @@
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="ocr.js"></script>
+	<link rel="stylesheet" type="text/css" href="ocr.css">
+</head>
+<body onload="ocrDemo.onLoadFunction()">
+	<div id="main-container" style="text-align: center;">
+		<h1>手写数字识别系统</h1>
+		<canvas id="canvas" width="200" height="200"></canvas>
+		<form name="input">
+			<p>数字: <input id="digit" type="text"> </p>
+			<input type="button" value="训 练" onclick="ocrDemo.train()">
+			<input type="button" value="测 试" onclick="ocrDemo.test()">
+			<input type="button" value="清 空" onclick="ocrDemo.resetCanvas();">
+		</form> 
+	</div>
+</body>
+</html>
